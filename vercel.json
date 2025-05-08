@@ -5,7 +5,7 @@
         "destination": "/contact"
       }
     ],
-    "regions": ["Australia"],
+    "regions": ["all"],
     "functions": {
       "api/**.ts": {
         "memory": 128,
