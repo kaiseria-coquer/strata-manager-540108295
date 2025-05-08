@@ -5,7 +5,7 @@
         "destination": "/contact"
       }
     ],
-    "regions": ["all"],
+    "regions": ["syd1"],
     "functions": {
       "api/**.ts": {
         "memory": 128,
