@@ -4,9 +4,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white text-black p-8 flex flex-col items-center">
       <header className="mb-10 text-center">
-        <h1 className="text-4xl font-bold">
-          Strata Manager 540108295
-        </h1>
+        <h1 className="text-4xl font-bold">Strata Manager 540108295</h1>
         <p className="mt-4 text-lg">
           Managing your building's communication, documents, and committee with ease.
         </p>
@@ -33,9 +31,9 @@ export default function Home() {
 
           {/* Icon gallery */}
           <div className="mt-6 flex gap-4 flex-wrap justify-center">
-            <img src="/office.svg" alt="Office" width={100} />
-            <img src="/bookshelf.svg" alt="Bookshelf" width={100} />
-            <img src="/chart.svg" alt="Chart" width={100} />
+            <img src="/office-svgrepo-com.svg" alt="Office" width={100} />
+            <img src="/bookshelf-svgrepo-com.svg" alt="Bookshelf" width={100} />
+            <img src="/pie-chart-svgrepo-com.svg" alt="Chart" width={100} />
           </div>
         </section>
 
@@ -50,8 +48,8 @@ export default function Home() {
         <section>
           <h2 className="text-2xl font-semibold">📬 Contact the Committee</h2>
           <p>
-            For maintenance requests or general inquiries, please email us at
-            <strong> committee@stratamanager.com</strong>
+            For maintenance requests or general inquiries, please email us at{" "}
+            <strong>committee@stratamanager.com</strong>
           </p>
         </section>
       </main>
