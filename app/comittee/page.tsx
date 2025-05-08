@@ -5,6 +5,8 @@ import { useState } from 'react';
 export default function CommitteePage() {
   const [input, setInput] = useState('');
   const [authenticated, setAuthenticated] = useState(false);
+  
+  console.log("ENV on client:", process.env.NEXT_PUBLIC_ADMIN_PASSWORD);
 
   const handleLogin = () => {
     if (input === process.env.NEXT_PUBLIC_ADMIN_PASSWORD) {
