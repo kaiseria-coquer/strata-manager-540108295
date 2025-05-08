@@ -26,7 +26,7 @@ export default function Home() {
           <h2 className="text-2xl font-semibold">🏢 About This Website</h2>
           <p>
             This web application supports a strata committee in managing building operations.
-            You can upload documents, share meeting minutes, and contact the committee.
+            You can upload documents, share meeting, and contact the committee.
           </p>
 
           {/* Icon gallery */}
