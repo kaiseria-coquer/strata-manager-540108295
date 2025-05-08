@@ -1,0 +1,23 @@
+{
+    "rewrites": [
+      {
+        "source": "/maintenance",
+        "destination": "/contact"
+      }
+    ],
+    "regions": ["Australia"],
+    "functions": {
+      "api/**.ts": {
+        "memory": 128,
+        "maxDuration": 10
+      }
+    },
+    "crons": [
+      {
+        "path": "/api/reminder",
+        "schedule": "0 9 * * 1"
+      }
+    ],
+    "buildCommand": "npm run build"
+  }
+  

@@ -2,101 +2,62 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="min-h-screen bg-white text-black p-8 flex flex-col items-center">
+      <header className="mb-10 text-center">
+        <h1 className="text-4xl font-bold">
+          Strata Manager 540108295
+        </h1>
+        <p className="mt-4 text-lg">
+          Managing your building's communication, documents, and committee with ease.
+        </p>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="mt-6 flex justify-center">
+          <Image
+            src="/static-web-design.webp"
+            alt="Static Web Design"
+            width={300}
+            height={300}
+            className="rounded shadow-lg"
+          />
         </div>
+        <p className="text-sm text-gray-600 mt-2">Illustration: Static Web Design</p>
+      </header>
+
+      <main className="space-y-6 max-w-2xl">
+        <section>
+          <h2 className="text-2xl font-semibold">🏢 About This Website</h2>
+          <p>
+            This web application supports a strata committee in managing building operations.
+            You can upload documents, share meeting minutes, and contact the committee.
+          </p>
+
+          {/* Icon gallery */}
+          <div className="mt-6 flex gap-4 flex-wrap justify-center">
+            <img src="/office.svg" alt="Office" width={100} />
+            <img src="/bookshelf.svg" alt="Bookshelf" width={100} />
+            <img src="/chart.svg" alt="Chart" width={100} />
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold">📄 Latest Announcements</h2>
+          <ul className="list-disc ml-6">
+            <li>Quarterly meeting on April 15th at 6:00 PM</li>
+            <li>Fire safety inspection scheduled for April 20th</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold">📬 Contact the Committee</h2>
+          <p>
+            For maintenance requests or general inquiries, please email us at
+            <strong> committee@stratamanager.com</strong>
+          </p>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      <footer className="mt-20 text-sm text-gray-500">
+        &copy; 2025 Strata Manager | Created for INFO1111
       </footer>
     </div>
   );
